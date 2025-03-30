@@ -1,0 +1,109 @@
+/* Estilos generales */ 
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+     /* Cabecera */ 
+header {
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    text-align: centro; 
+} 
+header h1 {
+    margin: 0; 
+} 
+header nav ul {
+    list-style: none;
+    padding: 0; 
+}
+header nav ul li {
+    display: inline; 
+    margin: 0 15px; 
+} 
+header nav ul li a {
+    /*display: inline;*/
+    color: white; 
+    text-decoration: none;
+}
+ 
+header nav ul li a:hover {
+    text-decoration: underline; 
+} 
+
+/* Contenedor principal */ 
+.contenedor {
+    display: Flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+} 
+/* Contenido principal */ 
+main { 
+    flex: 1;
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+principal h2 {
+    color: #333; 
+} 
+sección principal { 
+    margin-bottom: 20px; 
+} 
+main p {
+    color: #666; 
+    line-height: 1,6;
+} 
+/* Barra lateral */ 
+aside { 
+    width: 200px; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    margin-left: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+/*
+aside h3 {
+    color: #333; 
+} 
+aside p { 
+    color: #666; 
+    line-height: 1,6;
+} 
+*/
+
+/* Pie de página */ 
+footer { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px; 
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+/* Estilo para los campos de entrada */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+        
+}
+  
