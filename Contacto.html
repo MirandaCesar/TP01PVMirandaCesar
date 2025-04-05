@@ -1,10 +1,10 @@
-<! DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="es"> 
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Museos de Jujuy</title> 
-        <link rel="stylesheet" href="Estilos.css"> 
+        <link rel="stylesheet" href="assets/css/Estilos.css"> 
     </head> 
     <body> 
         <!-- Cabecera --> 
@@ -30,7 +30,7 @@
 
                     <form class="form-container">
                         <label for="Nombre"> Nombre y Apellido </label>
-                        <input type="text" name="Nombre" required> 
+                        <input type="text" name="Nombre" id="Nombre" required> 
                         <label for="DNI"> DNI </label>
                         <input type="number" name="DNI" required>
                         <label for="EMail"> Correo Electrónico </label>
@@ -39,20 +39,27 @@
                         <input type="text" name="Domicilio">
                         <label for="Telefono"> Teléfono </label>
                         <input type="text" name="Telefono">
-                        <input type="submit" >
+                        <button type="submit" onclick="enviarFormulario()">Enviar</button>
                     </form>
                 </section> 
             </main> 
             <!-- Barra lateral --> 
             <aside> 
-                <img src="img/Museo.jfif">
-                <!-- <h3>Información adicional</h3> 
-                <p>Aquí puedes poner enlaces o detalles adicionales sobre el sitio, como noticias o eventos.</p> -->
+                <img src="assets/images/Museo.png">
             </aside> 
         </div>
         <!-- Pie de página --> 
         <footer> 
             <p> Factultad de Ingeniería - Programación Visual 2025. Todos los derechos reservados.</p> 
         </footer> 
+        <script>
+            var apynom = null;
+            function enviarFormulario()
+            {
+                apynom = document.getElementById("Nombre").value;
+                alert(apynom + ": !Muchas gracias por registrarse! A la brevedad nos comunicaremos con usted para tenerlo al tanto de las últimas noticias. !!!Hasta pronto!!!");
+            }
+        </script>
+
     </body> 
 </html>
